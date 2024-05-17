@@ -37,7 +37,7 @@
           cursor: pointer;
 
           &:hover {
-            color: var(--lightbrown-color);
+            color: var(--cta-color);
           }
         }
       }
@@ -63,7 +63,7 @@
 
     padding: 50px 0;
 
-    background-color: var(--dark-color);
+    background-color: var(--bcg-color);
     z-index: 2;
 
     position: fixed;

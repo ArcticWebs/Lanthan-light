@@ -1,7 +1,7 @@
 @import "./variables.scss";
 @import "./breakpoints.scss";
 @import "include-media";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html,
 body {
   background-color: var(--bcg-color);
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: var(--black-color);
 
   scroll-behavior: smooth;
@@ -22,10 +22,62 @@ body {
   margin: 0 auto;
   padding: 8px;
 
-  @include media(">=laptop") {
-    width: 960px;
+  @include media(">=tablet") {
+    padding: 50px;
+  }
+
+  @include media(">=desktop") {
+    width: 1200px;
     padding: 0;
   }
+}
+
+.section {
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  @include media(">=laptop") {
+    flex-direction: row;
+  }
+}
+
+.sectionTxt {
+  width: 80%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  border-left: 2px solid var(--cta-color);
+
+  @include media(">=laptop") {
+    font-size: 25px;
+  }
+}
+
+.image {
+  width: 80%;
+  max-width: 620px;
+  border-radius: 10px;
+
+  @include media(">=laptop") {
+    width: 550px;
+  }
+}
+
+.boldTxt {
+  color: var(--cta-color);
+  font-weight: 700;
 }
 
 a,
@@ -36,5 +88,29 @@ a,
   &:hover {
     cursor: pointer;
     color: inherit;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include media(">=tablet") {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  text-align: center;
+
+  padding-top: 60px;
+
+  @include media(">=tablet") {
+    font-size: 25px;
   }
 }
