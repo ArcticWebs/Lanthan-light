@@ -1,0 +1,48 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/breakpoints.scss";
+@import "include-media";
+
+.mainButton {
+  width: fit-content;
+  min-width: 160px;
+  padding: 25px;
+  margin: 20px;
+
+  border-radius: 50px;
+
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+
+  z-index: 1;
+
+  transition: 0.4s;
+}
+
+.primeButton {
+  border: 3px solid var(--bcg-color);
+  background-color: transparent;
+  color: var(--bcg-color);
+
+  @include media(">=tablet") {
+    &:hover {
+      background-color: var(--cta-color);
+      border: 3px solid var(--cta-color);
+      color: var(--bcg-color);
+    }
+  }
+}
+
+.ctaButton {
+  border: 3px solid var(--bcg-color);
+  background-color: var(--cta-color);
+  color: var(--bcg-color);
+
+  @include media(">=tablet") {
+    &:hover {
+      background-color: var(--bcg-color);
+      border: 3px solid var(--cta-color);
+      color: var(--cta-color);
+    }
+  }
+}

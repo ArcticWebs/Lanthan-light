@@ -20,7 +20,7 @@
 
   h1 {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.5;
     color: var(--bcg-color);
 
@@ -28,7 +28,7 @@
     z-index: 1;
 
     @include media(">=tablet") {
-      font-size: 50px;
+      font-size: 70px;
     }
 
     @include media(">=tablet") {
@@ -40,7 +40,7 @@
     font-size: 35px;
 
     @include media(">=tablet") {
-      font-size: 55px;
+      font-size: 65px;
     }
   }
 
@@ -57,15 +57,14 @@
   }
 }
 
+.linkBox {
+  display: flex;
+  justify-content: end;
+}
 .cover {
   width: 100%;
   height: calc(100vh - 90px);
   background: rgba(0, 0, 0, 0.3);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(246, 243, 243, 1) 10%,
-  //   rgba(0, 0, 0, 0.35906862745098034) 50%
-  // );
 
   position: absolute;
   top: 90px;

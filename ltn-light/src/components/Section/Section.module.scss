@@ -1,0 +1,57 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/breakpoints.scss";
+@import "include-media";
+
+.secondaryBcgColor {
+  background-color: var(--sec-bcg-color);
+}
+
+.section {
+  height: 100vh;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  @include media(">=laptop") {
+    flex-direction: row;
+  }
+}
+
+.reversed {
+  @include media(">=laptop") {
+    flex-direction: row-reverse;
+  }
+}
+
+.sectionTxt {
+  width: 80%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  border-left: 4px solid var(--cta-color);
+
+  @include media(">=laptop") {
+    font-size: 25px;
+  }
+}
+
+.image {
+  width: 80%;
+  max-width: 620px;
+  border-radius: 10px;
+
+  @include media(">=laptop") {
+    width: 550px;
+  }
+}
