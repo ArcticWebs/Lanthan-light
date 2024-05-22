@@ -5,12 +5,14 @@ import fixing from "assets/fixing.jpg";
 import unplugged from "assets/unplugged.jpg";
 import SectionWithBcg from "components/SectionWithBcg/SectionWithBcg";
 import ProductsSection from "components/ProductsSection/ProductsSection";
+import { products } from "data/products";
+import { otherProducts } from "data/otherProducts";
 
 const Homepage = () => {
   return (
     <>
       <Header />
-      {/* <About /> */}
+
       <Section
         firstTxt={"Specjalizujemy sie w naprawach trudnych przypadków."}
         secondTxt={
@@ -24,6 +26,12 @@ const Homepage = () => {
         id={"service"}
       />
       <SectionWithBcg />
+      <ProductsSection
+        title={"NASZE EFEKTY GITAROWE"}
+        data={products}
+        id={"products"}
+      />
+      <ProductsSection title={"POZOSTAŁE PRODUKTY"} data={otherProducts} />
       <Section
         firstTxt={"Seba jest super wszystko umie, pracował w MLC"}
         secondTxt={
@@ -34,7 +42,7 @@ const Homepage = () => {
         imageSrc={unplugged}
         id={"about"}
       />
-      <ProductsSection />
+      <About />
     </>
   );
 };

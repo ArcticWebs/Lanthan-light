@@ -10,7 +10,7 @@ const Section = ({
   id,
 }) => {
   return (
-    <div className={styles.secondaryBcgColor} id={id}>
+    <div id={id}>
       <div
         className={clsx(
           "container",

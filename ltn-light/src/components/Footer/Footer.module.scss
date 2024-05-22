@@ -1,0 +1,19 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/breakpoints.scss";
+@import "include-media";
+
+.borderLine {
+  width: 100vw;
+  height: 1px;
+  background-color: var(--cta-color);
+}
+
+.footerBox {
+  display: flex;
+  gap: 50px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
