@@ -59,12 +59,18 @@
 
 .linkBox {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(">=tablet") {
+    flex-direction: row;
+    justify-content: end;
+  }
 }
 .cover {
   width: 100%;
   height: calc(100vh - 90px);
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 
   position: absolute;
   top: 90px;

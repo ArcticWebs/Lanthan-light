@@ -32,16 +32,7 @@ const Homepage = () => {
         id={"products"}
       />
       <ProductsSection title={"POZOSTAŁE PRODUKTY"} data={otherProducts} />
-      <Section
-        firstTxt={"Seba jest super wszystko umie, pracował w MLC"}
-        secondTxt={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }
-        thirdTxt={"Milion lat doświadczenia robi swoje!"}
-        isReversed={true}
-        imageSrc={unplugged}
-        id={"about"}
-      />
+
       <About />
     </>
   );

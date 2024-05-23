@@ -39,7 +39,7 @@
   font-weight: 500;
   line-height: 1.5;
 
-  border-left: 4px solid var(--cta-color);
+  border-left: 2px solid var(--cta-color);
 
   @include media(">=laptop") {
     font-size: 25px;

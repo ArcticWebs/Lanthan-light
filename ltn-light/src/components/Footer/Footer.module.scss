@@ -9,7 +9,10 @@
 }
 
 .footerBox {
+  background-color: var(--sec-bcg-color);
+
   display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 .contact {

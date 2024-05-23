@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 
 const ProductsSection = ({ title, data, id }) => {
   return (
-    <div id={id}>
+    <div className="container" id={id}>
       <h3>{title}</h3>
       <ul className={styles.productBox}>
         {data.map((product) => (
@@ -15,7 +15,7 @@ const ProductsSection = ({ title, data, id }) => {
               className={styles.productImg}
             />
             <p className={styles.productName}>{product.name}</p>
-            <p>{product.description}</p>
+            <p className={styles.description}>{product.description}</p>
           </li>
         ))}
       </ul>

@@ -1,3 +1,7 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/breakpoints.scss";
+@import "include-media";
+
 .bcgSection {
   height: 100vh;
 
@@ -25,11 +29,15 @@
 .heroTxt {
   color: var(--bcg-color);
 
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 400;
   line-height: 1.5;
 
   text-align: center;
 
   z-index: 1;
+
+  @include media(">=tablet") {
+    font-size: 50px;
+  }
 }
