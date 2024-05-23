@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <div className={styles.borderLine}></div>
-      <div className={styles.footerBox}>
+      <div className={styles.footerBox} id="contact">
         <div className={styles.contact}>
           <div>
             <SlPhone />

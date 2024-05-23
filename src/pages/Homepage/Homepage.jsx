@@ -2,7 +2,6 @@ import Header from "../../components/Header/Header";
 import About from "../../components/About/About";
 import Section from "../../components/Section/Section";
 import fixing from "assets/fixing.jpg";
-import unplugged from "assets/unplugged.jpg";
 import SectionWithBcg from "components/SectionWithBcg/SectionWithBcg";
 import ProductsSection from "components/ProductsSection/ProductsSection";
 import { products } from "data/products";

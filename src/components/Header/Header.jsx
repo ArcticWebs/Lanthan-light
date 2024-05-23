@@ -12,8 +12,8 @@ const Header = () => {
         </h1>
         <h2>SERWIS ELEKTRONICZNY I GDAŃSKA MANUFAKTURA EFEKTÓW GITAROWYCH</h2>
         <div className={clsx("container", styles.linkBox)}>
-          <Button name={"SERWIS"} isCta={false} />
-          <Button name={"PRODUKTY"} isCta={true} />
+          <Button name={"SERWIS"} isCta={false} link={"#service"} />
+          <Button name={"PRODUKTY"} isCta={true} link={"#products"} />
         </div>
       </div>
       <div className={styles.cover}></div>
