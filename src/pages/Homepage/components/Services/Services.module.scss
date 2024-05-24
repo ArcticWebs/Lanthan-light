@@ -1,0 +1,25 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/breakpoints.scss";
+@import "include-media";
+
+.section {
+  height: fit-content;
+
+  @include media(">=laptop") {
+    min-height: 100vh;
+  }
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  @include media(">=laptop") {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

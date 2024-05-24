@@ -1,4 +1,8 @@
 import styles from "./Footer.module.scss";
+import clsx from "clsx";
+import { PiCopyright } from "react-icons/pi";
+import logo from "assets/Logo-white.png";
+import arctic from "assets/arctic.png";
 import {
   SlSocialFacebook,
   SlSocialInstagram,
@@ -8,30 +12,41 @@ import {
 
 const Footer = () => {
   return (
-    <>
-      <div className={styles.borderLine}></div>
-      <div className={styles.footerBox} id="contact">
+    <div className={styles.footer}>
+      <div className={clsx("container", styles.footerBox)} id="contact">
+        <div className={styles.companyData}>
+          <img src={logo} alt="" />
+          <p>Sebastian Kiedrowski </p>
+          <p>NIP: 584 255 37 36</p>
+        </div>
+        <div className={styles.verticalLine}></div>
         <div className={styles.contact}>
-          <div>
+          <p>KONTAKT</p>
+          <div className={styles.contactTile}>
             <SlPhone />
             <p>662 965 442</p>
           </div>
-          <div>
+          <div className={styles.contactTile}>
             <SlEnvolope />
             <p>lanthan.electronics@gmail.com</p>
           </div>
         </div>
-        <div>
-          <p>Lanthan electronics </p>
-          <p>Sebastian Kiedrowski </p>
-          <p>ul. Czarnieckiego 13/5, 80-239 Gdańsk</p>
-
-          <p>NIP: 584 255 37 36</p>
-        </div>
-        <SlSocialFacebook />
-        <SlSocialInstagram />
       </div>
-    </>
+      <div className={styles.smIcons}>
+        <a href="https://www.facebook.com/profile.php?id=61550097236499">
+          <SlSocialFacebook />
+        </a>
+        <a href="https://www.instagram.com/lanthan_electronics/">
+          <SlSocialInstagram />
+        </a>
+      </div>
+      <div className={styles.copyrights}>
+        <PiCopyright />
+
+        <p>Copyrights by Anna Kiedrowska, 2024</p>
+        <img src={arctic} alt="" />
+      </div>
+    </div>
   );
 };
 

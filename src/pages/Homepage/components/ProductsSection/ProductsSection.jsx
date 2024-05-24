@@ -1,5 +1,5 @@
 import styles from "./ProductsSection.module.scss";
-
+import Tile from "components/Tile/Tile";
 import { nanoid } from "nanoid";
 
 const ProductsSection = ({ title, data, id }) => {
@@ -9,13 +9,11 @@ const ProductsSection = ({ title, data, id }) => {
       <ul className={styles.productBox}>
         {data.map((product) => (
           <li key={nanoid()} className={styles.productTile}>
-            <img
-              src={product.imgUrl}
-              alt={product.name}
-              className={styles.productImg}
+            <Tile
+              img={product.imgUrl}
+              title={product.name}
+              text={product.description}
             />
-            <p className={styles.productName}>{product.name}</p>
-            <p className={styles.description}>{product.description}</p>
           </li>
         ))}
       </ul>

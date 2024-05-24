@@ -2,21 +2,73 @@
 @import "/src/styles/breakpoints.scss";
 @import "include-media";
 
-.borderLine {
-  width: 100vw;
-  height: 1px;
-  background-color: var(--cta-color);
+.footer {
+  background-color: var(--black-color);
+  padding: 50px 0;
+
+  color: var(--bcg-color);
+  font-size: 15px;
 }
-
 .footerBox {
-  background-color: var(--sec-bcg-color);
-
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  @include media(">tablet") {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+.verticalLine {
+  height: 100px;
+  width: 2px;
+
+  background-color: var(--bcg-color);
 }
 .contact {
+  width: 300px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+  .contactTile {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.companyData {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+
+  img {
+    height: 30px;
+  }
+}
+
+.smIcons {
+  display: flex;
+  justify-content: center;
   gap: 50px;
+  margin-top: 30px;
+
+  background-color: var(--black-color);
+  color: var(--bcg-color);
+}
+
+.copyrights {
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+
+  img {
+    height: 25px;
+  }
 }

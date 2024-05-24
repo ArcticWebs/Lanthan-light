@@ -56,20 +56,26 @@ h2 {
   line-height: 1.5;
 
   @include media(">=tablet") {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
 h3 {
+  padding-top: 20px;
   font-size: 35px;
   font-weight: 500;
   line-height: 1.5;
 
-  padding: 30px;
+  @include media(">=tablet") {
+    padding-top: 50px;
+    font-size: 40px;
+  }
+}
 
-  text-align: center;
+h4 {
+  font-size: 15px;
 
   @include media(">=tablet") {
-    font-size: 40px;
+    font-size: 21px;
   }
 }

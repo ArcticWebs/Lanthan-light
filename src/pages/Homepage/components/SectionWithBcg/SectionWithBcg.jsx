@@ -8,8 +8,14 @@ const SectionWithBcg = () => {
       <p className={clsx("container", styles.heroTxt)}>
         DOWIEDZ SIĘ JAK MOŻEMY POMÓC TOBIE.
       </p>
-      <Button name={"KONTAKT"} link={"#contact"} />
-
+      <div className={styles.linkBox}>
+        <Button name={"ZADZWOŃ"} link={"tel:+48662965442"} isCta={true} />
+        <Button
+          name={"NAPISZ"}
+          link={"mailto:lanthan.electronics@gmail.com"}
+          isCta={false}
+        />
+      </div>
       <div className={styles.cover}></div>
     </div>
   );

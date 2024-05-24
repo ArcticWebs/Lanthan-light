@@ -1,18 +1,19 @@
-import Header from "../../components/Header/Header";
-import About from "../../components/About/About";
-import Section from "../../components/Section/Section";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Services from "./components/Services/Services";
 import fixing from "assets/fixing.jpg";
-import SectionWithBcg from "components/SectionWithBcg/SectionWithBcg";
-import ProductsSection from "components/ProductsSection/ProductsSection";
+import SectionWithBcg from "pages/Homepage/components/SectionWithBcg/SectionWithBcg";
+import ProductsSection from "pages/Homepage/components/ProductsSection/ProductsSection";
 import { products } from "data/products";
 import { otherProducts } from "data/otherProducts";
+import { services } from "data/services";
 
 const Homepage = () => {
   return (
     <>
       <Header />
 
-      <Section
+      <Services
         firstTxt={"Specjalizujemy sie w naprawach trudnych przypadków."}
         secondTxt={
           "Serwisujemy przede wszystkim sprzęt muzyczny - gitary elektryczne, wzmacniacze gitarowe, sprzęt estradowy i studyjny."
@@ -23,6 +24,7 @@ const Homepage = () => {
         isReversed={false}
         imageSrc={fixing}
         id={"service"}
+        data={services}
       />
       <SectionWithBcg />
       <ProductsSection

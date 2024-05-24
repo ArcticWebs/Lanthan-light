@@ -18,7 +18,7 @@ const About = () => {
           aliquip ex ea commodo consequat.
         </p>
         <p className={styles.aboutSpecialist}>
-          Milion lat doświadczenia robi swoje!
+          Zobacz relacje z naszych napraw na Facebooku!
         </p>
       </div>
       <div className={styles.cover}></div>
