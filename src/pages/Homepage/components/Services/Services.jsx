@@ -7,8 +7,20 @@ const Services = ({ id, data }) => {
   return (
     <div id={id}>
       <div className={clsx("container", styles.section)}>
-        <h3>NASZE SPECJALIZACJE</h3>
-        <h4>Zobacz, jak możemy pomóc Tobie</h4>
+        <h3
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
+          NASZE SPECJALIZACJE
+        </h3>
+        <h4
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
+          Zobacz, jak możemy pomóc Tobie
+        </h4>
         <ul className={styles.sectionList}>
           {data.map((service) => (
             <li key={nanoid()}>

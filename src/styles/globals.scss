@@ -20,10 +20,10 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 8px;
+  padding: 0 8px;
 
   @include media(">=tablet") {
-    padding: 50px;
+    padding: 0 50px;
   }
 
   @include media(">=desktop") {
@@ -56,6 +56,10 @@ h2 {
   line-height: 1.5;
 
   @include media(">=tablet") {
+    font-size: 22px;
+  }
+
+  @include media(">=laptop") {
     font-size: 27px;
   }
 }

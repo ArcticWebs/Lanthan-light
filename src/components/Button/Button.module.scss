@@ -5,20 +5,25 @@
 .mainButton {
   width: fit-content;
   min-width: 160px;
+
+  margin-top: 20px;
   padding: 25px;
-  margin: 20px 0;
 
   border-radius: 5px;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
 
   z-index: 1;
 
   transition: 0.4s;
-}
 
+  @include media(">=tablet") {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+}
 .primeButton {
   border: 3px solid var(--bcg-color);
   background-color: transparent;

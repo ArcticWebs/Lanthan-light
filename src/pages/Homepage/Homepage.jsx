@@ -7,8 +7,15 @@ import ProductsSection from "pages/Homepage/components/ProductsSection/ProductsS
 import { products } from "data/products";
 import { otherProducts } from "data/otherProducts";
 import { services } from "data/services";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Homepage = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Header />

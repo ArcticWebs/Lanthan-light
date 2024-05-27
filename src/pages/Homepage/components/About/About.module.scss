@@ -46,8 +46,16 @@
   @include media(">=tablet") {
     font-size: 50px;
   }
+  .ctaTxt {
+    color: var(--cta-color);
+    font-weight: 600;
+  }
 }
-
+.specialistDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .aboutSpecialist {
   font-size: 18px;
 
