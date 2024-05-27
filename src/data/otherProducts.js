@@ -1,17 +1,17 @@
-import prod1 from "assets/pcb1.jpg";
-import prod2 from "assets/pcb2.jpg";
+import prod1 from "assets/juno.jpg";
+import prod2 from "assets/voltage-doubler.jpg";
 
 export const otherProducts = [
   {
-    name: "PRODUKT 1",
+    name: "VCF80017A -zamiennik",
     description:
-      "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "    Zamiennik do oryginalnych modułów głosowych Roland 80017A. Używany m.in. w Juno 106. Wyprowadzenie pinów zgodne z oryginałem. Wym. 29x49mm.",
     imgUrl: prod1,
   },
   {
-    name: "PRODUKT 2",
+    name: "KONWERTER NAPIĘCIA 9V",
     description:
-      "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "    Zwiększa napięcie lub odwraca polaryzację (do niektórych efektów typu Fuzz). Umożliwia zmianę z 9v na 12V (80mA), z 9V na 16V (80mA) lub z 9V na -9V (80mA), nie powodując pojawienia się napięcia na obudowie w przeciewieństwie do zmiany poaryzacji wtyku.",
     imgUrl: prod2,
   },
 ];

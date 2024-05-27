@@ -4,20 +4,26 @@
 
 .mainButton {
   width: fit-content;
-  min-width: 160px;
+  min-width: 120px;
 
   margin-top: 20px;
-  padding: 25px;
+  padding: 20px;
 
   border-radius: 5px;
 
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
 
   z-index: 1;
 
   transition: 0.4s;
+
+  @include media(">=mobile") {
+    min-width: 160px;
+    padding: 25px;
+    font-size: 16px;
+  }
 
   @include media(">=tablet") {
     margin-top: 50px;

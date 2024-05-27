@@ -3,7 +3,7 @@
 @import "include-media";
 
 .bcgSection {
-  height: 100vh;
+  height: fit-content;
   display: flex;
 
   background-image: url(/assets/unplugged.jpg);
@@ -12,6 +12,10 @@
   background-size: cover;
 
   position: relative;
+
+  @include media(">=laptop") {
+    height: 100vh;
+  }
 }
 
 .sectionBox {
@@ -35,6 +39,7 @@
 }
 
 .heroTxt {
+  margin-top: 30px;
   color: var(--bcg-color);
 
   font-size: 35px;
@@ -52,14 +57,19 @@
   }
 }
 .specialistDescription {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .aboutSpecialist {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.5;
 
   @include media(">=tablet") {
-    font-size: 25px;
+    font-size: 20px;
   }
+}
+.smIcon {
+  font-size: 30px;
 }

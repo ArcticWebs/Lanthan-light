@@ -1,5 +1,6 @@
 import styles from "./About.module.scss";
 import clsx from "clsx";
+import { SlSocialFacebook } from "react-icons/sl";
 
 const About = () => {
   return (
@@ -19,16 +20,34 @@ const About = () => {
           data-aos-duration="1000"
         >
           <p className={styles.aboutSpecialist}>
-            Seba jest super wszystko umie, pracował w MLC
+            Jestem osobą cierpliwą i zdeterminowaną, z głęboką pasją do
+            naprawiania wszelkiego rodzaju sprzętu. Od 2005 roku udało mi się
+            przekształcić moje hobby w pracę w branży elektronicznej. Moje
+            podejście do pracy charakteryzuje się nieustępliwością i dbałością o
+            najwyższą jakość wykonanej usługi. Zawsze staram się znaleźć
+            rozwiązanie każdego problemu, niezależnie od tego, jak trudne może
+            się to wydawać.
           </p>
           <p className={styles.aboutSpecialist}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Muzyka odgrywa kluczową rolę w moim życiu, pozwalając mi na
+            wyrażanie kreatywności i zrozumienie potrzeb moich klientów-muzyków.
+            Znając ich wymagania i oczekiwania, mogę lepiej dostosować swoje
+            usługi, oferując precyzyjne i skuteczne rozwiązania. Dzięki temu
+            połączeniu pasji i zawodowej wiedzy, każda naprawa czy projekt stają
+            się dla mnie okazją do stworzenia czegoś wyjątkowego.
           </p>
           <p className={styles.aboutSpecialist}>
-            Zobacz relacje z naszych napraw na Facebooku!
+            Moim celem jest zawsze dostarczanie usług najwyższej jakości, które
+            przynoszą satysfakcję zarówno mnie, jak i moim klientom.
+          </p>
+          <p className={styles.aboutSpecialist}>
+            Zobacz relacje z moich napraw na Facebooku!{" "}
+            <a
+              className={styles.smIcon}
+              href="https://www.facebook.com/profile.php?id=61550097236499"
+            >
+              <SlSocialFacebook />
+            </a>
           </p>
         </div>
       </div>

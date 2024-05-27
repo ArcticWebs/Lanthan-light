@@ -83,10 +83,6 @@
 
   font-size: 12px;
 
-  @include media(">tablet") {
-    align-items: flex-end;
-  }
-
   img {
     height: 25px;
   }

@@ -1,6 +1,6 @@
 import guitarFix from "assets/fixing.jpg";
 import service2 from "assets/photo2.jpg";
-import service3 from "assets/photo1.jpg";
+import service3 from "assets/main-board.jpg";
 
 export const services = [
   {
