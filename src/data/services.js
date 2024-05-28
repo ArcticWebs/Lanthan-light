@@ -1,6 +1,6 @@
 import guitarFix from "assets/fixing.jpg";
-import service2 from "assets/earphones.jpg";
-import service3 from "assets/multimetr.jpg";
+import service2 from "assets/mixer2.jpg";
+import service3 from "assets/pcb.jpg";
 
 export const services = [
   {
@@ -19,7 +19,7 @@ export const services = [
   {
     name: "PŁYTY STERUJĄCE",
     description:
-      "Diagnozujemy usterki i naprawiamy moduły sterujące do różnego rodzaju urządzeń przemysłowych takich jak podnośniki, maszyny produkcyjne. Produkujemy podzespoły i komponenty elektroniczne do urządzeń - od projektu do gotowego modułu w zależości od potrzeb Klienta.",
+      "Diagnozujemy usterki i naprawiamy moduły sterujące do różnego rodzaju urządzeń przemysłowych, takich jak podnośniki, maszyny produkcyjne. Produkujemy podzespoły i komponenty elektroniczne do urządzeń - od projektu do gotowego modułu, w zależości od potrzeb Klienta.",
     imgUrl: service3,
   },
 ];

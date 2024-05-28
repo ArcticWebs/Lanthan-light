@@ -44,7 +44,9 @@ const Footer = () => {
         <PiCopyright />
 
         <p>Copyrights by Anna Kiedrowska, 2024</p>
-        <img src={arctic} alt="" />
+        <a href="https://github.com/ArcticWebs">
+          <img src={arctic} alt="" />
+        </a>
       </div>
     </div>
   );
