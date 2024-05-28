@@ -1,10 +1,10 @@
 import styles from "./About.module.scss";
 import clsx from "clsx";
-import { SlSocialFacebook } from "react-icons/sl";
+import { ImFacebook2 } from "react-icons/im";
 
 const About = () => {
   return (
-    <div className={styles.bcgSection}>
+    <div id="about" className={styles.bcgSection}>
       <div className={clsx("container", styles.sectionBox)}>
         <p
           data-aos="fade-down"
@@ -46,7 +46,7 @@ const About = () => {
               className={styles.smIcon}
               href="https://www.facebook.com/profile.php?id=61550097236499"
             >
-              <SlSocialFacebook />
+              <ImFacebook2 />
             </a>
           </p>
         </div>

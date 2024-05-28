@@ -6,20 +6,20 @@ export const products = [
   {
     name: "FUZZION",
     description:
-      "The best fuzz effect Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      'Doskonały do solówek, selektywny, lekko "brudny", z tendencją do bramkowania. Użyte do budowy fuzza wysokiej jakości komponenty zapewniają dużą dynamikę, długi sustain oraz niezawodność efektu. Przełącznik scope wycina część środkowego pasma. ',
     imgUrl: fuzzion,
   },
   {
     name: "PRECMOS",
     description:
-      "Nasz super Precmos. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Efekt typu drive, który uwydatnia brzmienie twang z każdej gitary.  3-punktowa aktywna regulacja barwy pozwala na uzyskanie różnorodnych, unikalnych brzmień. Użycie układu cmos nadaje oryginalny charaker brzmienia przesteru, a rozbudowany układ zasilania zwiększa dynamikę efektu.",
     imgUrl: precmos,
   },
 
   {
     name: "TREMOLO",
     description:
-      "Pulsujące tremolo super hiper Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Analogowo-optyczne tremolo z wieloma możliwościami kreowania dźwięku. Potencometr volume pozwala uzyskać clean boost a nawet lekki crunch. Brzmienie jest transparentne z minimalną tendencją do rozjaśnienia",
     imgUrl: tremolo,
   },
 ];

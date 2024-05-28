@@ -1,24 +1,25 @@
 import guitarFix from "assets/fixing.jpg";
-import service2 from "assets/photo2.jpg";
-import service3 from "assets/main-board.jpg";
+import service2 from "assets/earphones.jpg";
+import service3 from "assets/multimetr.jpg";
 
 export const services = [
   {
-    name: "GITARY ELEKTRYCZNE",
-    description:
-      "Nasz super Precmos. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgUrl: guitarFix,
-  },
-  {
     name: "SPRZĘT ESTRADOWY",
     description:
-      "The best fuzz effect Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Naprawiamy sprzęt używany na estradach i w studiach nagrań m.in. pianina cyfrowe, syntezatory, mikrofony, preampy, miksery audio, kolumny aktywne, interfejsy.  Wykonujemy kable na zamówienie.",
     imgUrl: service2,
   },
   {
+    name: "GITARY ELEKTRYCZNE",
+    description:
+      "Dbamy o gitary elektryczne, elektro-akustyczne, wzmacniacze gitarowe i basowe oraz efekty. Zajmujemy się również budową pedal boardów i innych urządzeń na życzenie Klienta.",
+    imgUrl: guitarFix,
+  },
+
+  {
     name: "PŁYTY STERUJĄCE",
     description:
-      "Pulsujące tremolo super hiper Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Diagnozujemy usterki i naprawiamy moduły sterujące do różnego rodzaju urządzeń przemysłowych takich jak podnośniki, maszyny produkcyjne. Produkujemy podzespoły i komponenty elektroniczne do urządzeń - od projektu do gotowego modułu w zależości od potrzeb Klienta.",
     imgUrl: service3,
   },
 ];
