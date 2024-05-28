@@ -26,8 +26,30 @@ const Navbar = () => {
       setShowMenu(false);
     }
   };
+
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className={styles.navContainer}>
+    <nav className={clsx(styles.navContainer, !show && styles.hidden)}>
       <div className={clsx("container", styles.navbar)}>
         <div className={styles.logoBox}>
           <img src={logo} alt="my logo" className={styles.logo} />

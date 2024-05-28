@@ -1,7 +1,7 @@
 @import "styles/breakpoints.scss";
 
 .headerSection {
-  height: calc(100vh - 90px);
+  height: 100vh;
   background-image: url(/assets/guitar.jpg);
 
   background-position: center;
@@ -20,6 +20,7 @@
   justify-content: center;
 
   h1 {
+    margin-top: 90px;
     font-size: 35px;
     font-weight: 600;
     line-height: 1.5;
@@ -70,7 +71,7 @@
 
 .cover {
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 
   position: absolute;
