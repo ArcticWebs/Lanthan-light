@@ -15,20 +15,23 @@
   align-items: center;
   gap: 50px;
 
-  @include media(">tablet") {
-    flex-direction: row;
+  @include media(">=tablet") {
+    flex-direction: row-reverse;
     justify-content: center;
+
     gap: 100px;
   }
 }
-.verticalLine {
-  height: 100px;
-  width: 2px;
+.borderLine {
+  height: 1px;
+  width: 80%;
+  max-width: 1200px;
   display: none;
 
   background-color: var(--bcg-color);
-  @include media(">tablet") {
+  @include media(">=tablet") {
     display: block;
+    margin: 40px auto;
   }
 }
 .contact {
@@ -38,8 +41,13 @@
   gap: 20px;
   align-items: center;
 
-  @include media(">tablet") {
+  @include media(">=tablet") {
     align-items: flex-start;
+  }
+
+  .bold {
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .contactTile {
@@ -47,7 +55,12 @@
     gap: 20px;
   }
 }
-
+.hiddenButton {
+  display: none;
+  @include media(">=laptop") {
+    display: block;
+  }
+}
 .companyData {
   width: 290px;
 
@@ -55,7 +68,7 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  @include media(">tablet") {
+  @include media(">=tablet") {
     align-items: flex-end;
   }
 
@@ -85,5 +98,9 @@
 
   img {
     height: 25px;
+  }
+
+  @include media(">=tablet") {
+    justify-content: flex-end;
   }
 }

@@ -9,6 +9,7 @@ import {
   SlPhone,
   SlEnvolope,
 } from "react-icons/sl";
+import Button from "components/Button/Button";
 
 const Footer = () => {
   return (
@@ -19,9 +20,11 @@ const Footer = () => {
           <p>Sebastian Kiedrowski </p>
           <p>NIP: 584 255 37 36</p>
         </div>
-        <div className={styles.verticalLine}></div>
+        <div className={styles.hiddenButton}>
+          <Button name={"ZADZWOŃ"} link={"tel:+48662965442"} isCta={false} />
+        </div>
         <div className={styles.contact}>
-          <p>KONTAKT</p>
+          <p className={styles.bold}>KONTAKT</p>
           <div className={styles.contactTile}>
             <SlPhone />
             <p>662 965 442</p>
@@ -32,6 +35,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={styles.borderLine}></div>
       <div className={styles.smIcons}>
         <a href="https://www.facebook.com/profile.php?id=61550097236499">
           <SlSocialFacebook />

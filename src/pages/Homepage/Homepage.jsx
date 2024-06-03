@@ -1,7 +1,6 @@
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
-import fixing from "assets/fixing.jpg";
 import SectionWithBcg from "pages/Homepage/components/SectionWithBcg/SectionWithBcg";
 import ProductsSection from "pages/Homepage/components/ProductsSection/ProductsSection";
 import { products } from "data/products";
@@ -20,19 +19,7 @@ const Homepage = () => {
     <>
       <Header />
 
-      <Services
-        firstTxt={"Specjalizujemy sie w naprawach trudnych przypadków."}
-        secondTxt={
-          "Serwisujemy przede wszystkim sprzęt muzyczny - gitary elektryczne, wzmacniacze gitarowe, sprzęt estradowy i studyjny."
-        }
-        thirdTxt={
-          "Dzięki skutecznym naprawom, od lat cieszymy się dobrą opinią i zaufaniem muzyków."
-        }
-        isReversed={false}
-        imageSrc={fixing}
-        id={"service"}
-        data={services}
-      />
+      <Services id={"service"} data={services} />
       <SectionWithBcg />
       <ProductsSection
         title={"NASZE EFEKTY GITAROWE"}

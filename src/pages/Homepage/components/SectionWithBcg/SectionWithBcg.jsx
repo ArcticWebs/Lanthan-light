@@ -5,13 +5,15 @@ import clsx from "clsx";
 const SectionWithBcg = () => {
   return (
     <div className={styles.bcgSection}>
-      <p
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        className={clsx("container", styles.heroTxt)}
-      >
-        CHCESZ, ŻEBYŚMY ZDIAGNOZOWALI TWÓJ SPRZĘT?
-      </p>
+      <div className={clsx("container", styles.heading)}>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className={styles.heroTxt}
+        >
+          CHCESZ, ŻEBYŚMY ZDIAGNOZOWALI TWÓJ SPRZĘT?
+        </p>
+      </div>
       <div className={styles.linkBox}>
         <Button name={"ZADZWOŃ"} link={"tel:+48662965442"} isCta={true} />
         <Button
