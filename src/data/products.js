@@ -19,7 +19,7 @@ export const products = [
   {
     name: "TREMOLO",
     description:
-      "Analogowo-optyczne tremolo z wieloma możliwościami kreowania dźwięku. Potencjometr volume pozwala uzyskać clean boost a nawet lekki crunch. Brzmienie jest transparentne z minimalną tendencją do rozjaśnienia.",
+      "Analogowe, optyczne tremolo z wieloma możliwościami kreowania dźwięku. Potencjometr volume pozwala uzyskać clean boost a nawet lekki crunch. Brzmienie jest transparentne z minimalną tendencją do rozjaśnienia.",
     imgUrl: tremolo,
   },
 ];
