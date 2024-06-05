@@ -45,6 +45,8 @@ const About = () => {
             <a
               className={styles.smIcon}
               href="https://www.facebook.com/profile.php?id=61550097236499"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <ImFacebook2 />
             </a>

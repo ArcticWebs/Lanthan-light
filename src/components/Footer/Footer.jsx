@@ -37,10 +37,18 @@ const Footer = () => {
       </div>
       <div className={styles.borderLine}></div>
       <div className={styles.smIcons}>
-        <a href="https://www.facebook.com/profile.php?id=61550097236499">
+        <a
+          href="https://www.facebook.com/profile.php?id=61550097236499"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SlSocialFacebook />
         </a>
-        <a href="https://www.instagram.com/lanthan_electronics/">
+        <a
+          href="https://www.instagram.com/lanthan_electronics/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SlSocialInstagram />
         </a>
       </div>
@@ -48,7 +56,11 @@ const Footer = () => {
         <PiCopyright />
 
         <p>Copyrights by Anna Kiedrowska, 2024</p>
-        <a href="https://github.com/ArcticWebs">
+        <a
+          href="https://arcticwebs.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={arctic} alt="" />
         </a>
       </div>
