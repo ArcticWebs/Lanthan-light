@@ -15,11 +15,11 @@ const ProductsSection = ({ title, data, id }) => {
               img={product.imgUrl}
               title={product.name}
               text={product.description}
+              isAvailable={product.isAvailable}
             />
           </li>
         ))}
       </ul>
-      <img src="assets/pcb2.jpg" alt="" />
     </div>
   );
 };
