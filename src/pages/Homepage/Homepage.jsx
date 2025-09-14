@@ -22,7 +22,7 @@ const Homepage = () => {
       <Services id={"service"} data={services} />
       <SectionWithBcg />
       <ProductsSection
-        title={"NASZE EFEKTY GITAROWE"}
+        title={"AUTORSKIE EFEKTY GITAROWE"}
         data={products}
         id={"products"}
       />

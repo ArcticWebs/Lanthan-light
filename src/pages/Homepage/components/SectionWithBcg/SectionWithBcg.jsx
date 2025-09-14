@@ -11,7 +11,7 @@ const SectionWithBcg = () => {
           data-aos-duration="1000"
           className={styles.heroTxt}
         >
-          CHCESZ, ŻEBYŚMY ZDIAGNOZOWALI TWÓJ SPRZĘT?
+          JAK MOGĘ CI POMÓC?
         </p>
       </div>
       <div className={styles.linkBox}>

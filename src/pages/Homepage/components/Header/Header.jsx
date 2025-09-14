@@ -11,7 +11,7 @@ const Header = () => {
             data-aos-offset="200"
             data-aos-duration="1000"
           >
-            Z PASJĄ DBAMY O TWOJĄ
+            Z PASJĄ ZADBAM O TWOJĄ
             <p className={styles.ctaTxt}> ELEKTRONIKĘ.</p>
           </h1>
           <h2
